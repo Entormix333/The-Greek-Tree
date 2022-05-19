@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The ??? Tree",
-	id: "mymod",
-	author: "nobody",
-	pointsName: "points",
+	name: "The Greek Tree",
+	id: "greek",
+	author: "Karen",
+	pointsName: "aplha",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
@@ -19,8 +19,7 @@ let VERSION = {
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+		- Intial Release.<br>
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -56,7 +55,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("e2147483647"))
 }
 
 
